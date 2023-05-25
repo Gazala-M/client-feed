@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client feedback</title>
+    <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+    
+    <section class="client_feedback section">
+        <div class="container">
+            <div class="row">
+                <h2 class="title aos-init aos-animate" data-aos="fade-right">Check what our clients are Saying</h2>
+            </div>
+            
+            
+ <div class="slideshow-container">
+ <div class="row mt-4 mt-sm-5 px-sm-5">
+    <div class="slide">
+      <!-- Slide content for the first slide -->
+      <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+      style="width: 800px;">
+    
+          <div class="feedback_inner position-relative" tabindex="-1"
+              style="width:100%;display:inline-block">
+              <div class="feedback_text">
+                  <div class="position-relative">
+                      <div class="l_quotes"><img alt="quotes" loading="lazy" width="36"
+                              height="36" decoding="async" data-nimg="1"
+                              style="color:transparent"
+                              src="quotes.png"></div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iure
+                          mollitia ducimus ad sint minima aut totam voluptates! Doloribus,
+                          eum!</p>
+                      <div class="r_quotes"><img alt="quotes" loading="lazy" width="36"
+                              height="36" decoding="async" data-nimg="1"
+                              style="color:transparent"
+                              src="quotes.png"></div>
+                  </div>
+              </div>
+              <div class="client_info d-flex align-items-center justify-content-end mt-4">
+                  <div class="client_img"><img alt="Josiah Hart" loading="lazy" width="70"
+                          height="70" decoding="async" data-nimg="1" style="color:transparent"
+                          src="./Images/user.png"></div>
+                  <div class="mx-3 client_name">
+                      <h2>Josiah Hart</h2>
+                      <p>CEO - UK</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+    <div class="slide">
+      <!-- Slide content for the second slide -->
+      <h1>Slide 2</h1>
+      <p>This is the content for slide 2.</p>
+    </div>
+    <div class="slide">
+      <!-- Slide content for the third slide -->
+      <h1>Slide 3</h1>
+      <p>This is the content for slide 3.</p>
+    </div>
+
+ </div>
+      <ul style="display:block" class="slick-dots">
+          <li class=""><button>1</button></li>
+          <li class="slick-active"><button>2</button></li>
+           <li class=""><button>3</button></li>
+     </ul>
+</div>  
+</div>
+</section>
+  <script>
+    // JavaScript code for slideshow functionality
+    var slides = document.getElementsByClassName('slide');
+    var currentIndex = 0;
+
+    function showSlide(index) {
+      if (index >= slides.length) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = slides.length - 1;
+      }
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+
+      slides[currentIndex].style.display = 'block';
+    }
+
+    // Initial slide display
+    showSlide(currentIndex);
+
+    // Automatic slide change every 3 seconds
+    setInterval(function() {
+      currentIndex++;
+      showSlide(currentIndex);
+    }, 3000);
+  </script>   -->
+</body>
+</html>
+
+
